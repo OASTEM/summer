@@ -189,7 +189,7 @@ p#tagline{
 
 
 #egr-wrap{
-    background-image: url('https://placeholdit.imgix.net/~text?txtsize=63&txt=This+is+a+placeholder+image+for+Nick&w=2596&h=1456');
+    background-image: url('../images/banner.jpg');
 }
 
 #egr-wrap h3{
@@ -203,7 +203,7 @@ p#tagline{
 
 
 #math-wrap{
-    background-image: url('https://placeholdit.imgix.net/~text?txtsize=63&txt=This+is+a+placeholder+image+for+Jenny&w=2596&h=1456');
+    background-image: url('http://thumbs.dreamstime.com/z/frustrated-new-math-student-showing-his-frustration-example-45963119.jpg');
 }
 
 #math-wrap h3{
