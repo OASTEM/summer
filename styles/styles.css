@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 0.938em;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    -webkit-border-radius: 0.438em;
+    -moz-border-radius: 0.438em;
+    border-radius: 0.438em;
+    color: #ffffff;
+    font-size: 1.25em;
+    font-weight: 400;
+    background: #222;
+    border: solid #ffffff 0.188em;
+    padding: 0.75em 2em 0.75em 2em;
+    text-decoration: none;
+    cursor:pointer;
+    transition: background 0.25s;
+}
+
+.btn:hover {
+    background: #333;
+    text-decoration: none;
+}
+
+#head-container{
+    background-image: url('https://placeholdit.imgix.net/~text?txtsize=63&txt=This+is+a+placeholder+image&w=1366&h=450');
+    height: 28.125em;
+}
+
+.img-wrap{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.parallax-img{
+    background-attachment: fixed;
+}
+
+#head{
+    align-self: center;
+    text-align: center;
+}
+
+#head *{
+    margin: 0.625em;
+}
+
+hr{
+    width:5em;
+    color:#ee7355;
+    height: 0.45em;
+    background-color:#ee7355;
+    border:none;
+    margin:20px 0;
+}
+
+h1{
+    color:white;
+    font-size: 4em;
+}
+
+h3{
+    color:white;
+    font-size:2em;
+}
+
+h2.info-head{
+    font-size: 4em;
+}
+
+p#tagline{
+    font-weight: 300;
+    color:white;
+}
+
+.info{
+    margin:50px 0;
+}
+
+.info p{
+    font-size: 1.1em;
+}
+
+.info img{
+    max-width:100%;
+}
+
+.info-cont{
+    padding-right: 6.25em;
+}
+
+.sect{
+    margin-bottom: 5em;
+}
+
+.blk-tint{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.cal-wrap{
+    position: relative;
+    padding-bottom: 50%;
+    height:0;
+    overflow: hidden;
+}
+
+.cal-wrap iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+}
+
+
+
+
+
+
+.dept p{
+    font-size: 1.1em;
+    color:white;
+    font-style: italic;
+}
+
+#sci-wrap{
+    background-image: url("../images/science1.jpg")
+}
+
+#sci-wrap h3{
+    color: #41ad4a;
+}
+
+#sci-wrap > .pillar, #sci-wrap hr{
+    background-color: #41ad4a;
+}
+
+
+
+#tech-wrap{
+    background-image: url("../images/tech1.jpg")
+}
+
+#tech-wrap h3{
+    color: #7397cf;
+}
+
+#tech-wrap > .pillar, #tech-wrap hr{
+    background-color: #7397cf;
+}
+
+
+
+#egr-wrap{
+    background-image: url('https://placeholdit.imgix.net/~text?txtsize=63&txt=This+is+a+placeholder+image+for+Nick&w=2596&h=1456');
+}
+
+#egr-wrap h3{
+    color: #df5126;
+}
+
+#egr-wrap > .pillar, #egr-wrap hr{
+    background-color: #df5126;
+}
+
+
+
+#math-wrap{
+    background-image: url('https://placeholdit.imgix.net/~text?txtsize=63&txt=This+is+a+placeholder+image+for+Jenny&w=2596&h=1456');
+}
+
+#math-wrap h3{
+    color: #ebae1e;
+}
+
+#math-wrap > .pillar, #math-wrap hr{
+    background-color: #ebae1e;
+}
+
+
+#join{
+    background-color: #222;
+    color:#fff;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    transition: background 0.25s;
+}
+
+#join:hover{
+    background-color: #333;
+}
+
+#join h1{
+    font-weight: 300;
+    font-size: 3em;
+    align-self: center;
+}
