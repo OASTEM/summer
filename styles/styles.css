@@ -22,6 +22,7 @@
     padding: 0.938em;
 }
 
+
 .row::after {
     content: "";
     clear: both;
@@ -53,7 +54,7 @@ html{
 }
 
 #head-container{
-    background-image: url('https://placeholdit.imgix.net/~text?txtsize=63&txt=This+is+a+placeholder+image&w=1366&h=450');
+    background-image: url('http://previews.123rf.com/images/ra2studio/ra2studio1105/ra2studio110500075/9498666-A-businessman-working-on-modern-technology-Stock-Photo-technology-future-innovation.jpg');
     height: 28.125em;
 }
 
@@ -107,7 +108,9 @@ p#tagline{
 }
 
 .info{
-    margin:50px 0;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5em 0em;
 }
 
 .info p{
@@ -119,14 +122,15 @@ p#tagline{
 }
 
 .info-cont{
-    padding-right: 6.25em;
+    /*padding-right: 6.25em;*/
 }
 
 .sect{
-    margin-bottom: 5em;
+    /*margin-bottom: 5em;*/
 }
 
 .blk-tint{
+    padding: 5em 15em 5em 2em;
     background-color: rgba(0,0,0,0.7);
 }
 
@@ -228,4 +232,39 @@ p#tagline{
     font-weight: 300;
     font-size: 3em;
     align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+    [class*="grid-"]{
+        width: 100%;   
+    }
+    .col-1, .col-2, .col-3, .col-4 {
+        width: 50%;
+        text-align: center;
+    }
+    .hide-on-mobile{
+        display: none; 
+    }
+    .hide-on-desktop{
+        display: block;   
+    }
+}
+@media only screen and (max-width: 492px) {
+    .col-1, .col-2, .col-3, .col-4 {width: 100%;}
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    .form-container input, .form-container textarea{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .description-container p{
+        font-size: 1.5em;
+    }
 }
