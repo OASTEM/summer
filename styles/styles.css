@@ -54,7 +54,7 @@ html{
 }
 
 #head-container{
-    background-image: url('http://previews.123rf.com/images/ra2studio/ra2studio1105/ra2studio110500075/9498666-A-businessman-working-on-modern-technology-Stock-Photo-technology-future-innovation.jpg');
+    background-image: url('../images/head.jpg');
     height: 28.125em;
 }
 
@@ -86,6 +86,16 @@ hr{
     background-color:#ee7355;
     border:none;
     margin:20px 0;
+}
+
+a,a:visited{
+    color:#EE7355;
+    text-decoration: none;
+}
+
+a:hover, a:focus{
+    text-decoration:underline dotted;
+    
 }
 
 h1{
@@ -157,11 +167,12 @@ p#tagline{
 .dept p{
     font-size: 1.1em;
     color:white;
-    font-style: italic;
+    text-indent: 2em;
 }
 
 #sci-wrap{
-    background-image: url("../images/science1.jpg")
+    background-image: url("../images/science1.jpg");
+    background-position: 5em; 
 }
 
 #sci-wrap h3{
@@ -175,7 +186,8 @@ p#tagline{
 
 
 #tech-wrap{
-    background-image: url("../images/tech1.jpg")
+    background-image: url("../images/tech1.jpg");
+    background-position: 2em; 
 }
 
 #tech-wrap h3{
@@ -189,7 +201,8 @@ p#tagline{
 
 
 #egr-wrap{
-    background-image: url('../images/banner.jpg');
+    background-image: url('../images/egr.jpg');
+    background-position: 2em; 
 }
 
 #egr-wrap h3{
@@ -203,7 +216,8 @@ p#tagline{
 
 
 #math-wrap{
-    background-image: url('http://thumbs.dreamstime.com/z/frustrated-new-math-student-showing-his-frustration-example-45963119.jpg');
+    background-image: url('../images/math.jpg');
+    background-position: 2em; 
 }
 
 #math-wrap h3{
@@ -267,4 +281,69 @@ p#tagline{
     .description-container p{
         font-size: 1.5em;
     }
+}
+
+#faq-wrap{
+    width:75%;
+    background-color: #F2F2F2;
+    margin: 5em auto;
+    padding: 2em;
+}
+
+#faq-wrap h1{
+    font-size: 10em;
+    color:#a9a9a9;
+    text-align: center;
+}
+
+#faq-wrap hr{
+    width: 75%;
+    height:0.15em;
+    background-color:#a9a9a9;
+    margin:2em auto;
+}
+
+.question{
+    margin:2em 4em;
+}
+
+.question p{
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.answer p{
+    padding:0.5em;
+    margin-left: 7em;
+    border-left: solid 1px #a9a9a9;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.hidden .answer {
+    display: none; 
+}
+
+.active .answer {
+    display: inline; 
+}
+
+.question.active > p:before{
+    content:"▼ ";
+}
+
+.question.hidden > p:before{
+    content:"▶ ";
+}
+
+#faq-wrap h2{
+    margin-top: 2em;
+    text-align: center;
+}
+
+#faq-wrap p.email{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 300;
 }
