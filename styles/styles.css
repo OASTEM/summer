@@ -149,8 +149,28 @@ p#tagline{
     background-color: rgba(0,0,0,0.7);
 }
 
+.meetings h2{
+    font-size: 2.5em;
+}
 
+.meetings h3{
+    color:black;
+    font-size: 2em;
+}
 
+.loc h3#mtg{
+    margin-top: 3em;
+}
+
+.loc p#addr{
+    padding: 1em;
+}
+
+#dept-days{
+    text-align: left;
+    margin-top: 0.1em;
+    margin-bottom: 2.75em;
+}
 
 
 .dept p{
