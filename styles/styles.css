@@ -158,8 +158,10 @@ p#tagline{
     font-size: 2em;
 }
 
-.loc h3#mtg{
-    margin-top: 3em;
+.loc h2#sch{
+    color:#EE7355;
+    font-weight: 300;
+    line-height: 0.5em;
 }
 
 .loc p#addr{
@@ -167,8 +169,50 @@ p#tagline{
 }
 
 #dept-days{
-    margin-top: 0.1em;
-    margin-bottom: 2.75em;
+    margin-top: 0.5em;
+}
+
+
+#dept,#times{
+    width:45%;
+    display:inline-block;
+}
+
+#dept{
+    text-align: right;
+}
+
+#dept p{
+    font-weight: bold;
+    padding: 0.3em 0;
+}
+
+#dept #sci{
+    color:#41AD4A;
+}
+
+#dept #tech{
+    color:#7397CF;
+}
+
+#dept #egr{
+    color:#DF5126;
+}
+
+#dept #math{
+    color:#EBAE1E;
+}
+
+#times{
+    text-align: left;
+}
+
+#times p{
+    padding: 0.3em 0;
+}
+
+#times #nineTo12{
+    color:#EE7355;
 }
 
 
@@ -177,6 +221,23 @@ p#tagline{
     color:white;
     text-indent: 2em;
 }
+
+#meet,#us,#here{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#us{
+    font-size: 1.6em;
+    border-bottom: 0.15em solid #EE7355;
+    border-top: 0.15em solid #EE7355;
+    line-height: 1em;
+    margin: 1em 0.2em;
+}
+
+
+
+
 
 #sci-wrap{
     background-image: url("../images/science1.jpg");
