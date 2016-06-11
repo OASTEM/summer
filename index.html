@@ -9,6 +9,11 @@
         <link href="styles/styles.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="faq.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.7.3/fullcalendar.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.7.3/fullcalendar.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.7.3/gcal.js"></script>
+        <script src="cal.js"></script>
     </head>
     
     <body>
@@ -30,7 +35,7 @@
                 <p>get to know a little about the people in charge</p>
             </div>
             <div class="col-6 info-cont">
-                <p>We are Oxford Academy STEM, an on campus club and academic team. We aim to support the bright young minds of the students within our school. Our goal for students is simple: Learn, compete, and thrive. Members of OA STEM participate in Science, Technology, Engineering, and Math competitions, ranging from trivia to constructing robots. Even if you don't feel ready for competition, we welcome students without any prior experience--education is our number one priority. You can join one...two...or all four of our departments!</p>
+                <p>We are Oxford Academy STEM, an on campus club and academic team. We aim to support the bright young minds of the students within our school. Our goal for students is simple: Learn, compete, and thrive. Members of OA STEM participate in Science, Technology, Engineering, and Math competitions, ranging from trivia to constructing robots. Even if you don't feel ready for competition, we welcome students without any prior experience&mdash;education is our number one priority. You can join one...two...or all four of our departments!</p>
             </div>
         </div>
 
@@ -46,14 +51,34 @@
                 </div>
             </div>
         </div>
-        <div class="row info">
-            <div class="col-6">
-                
+        <div class="meetings row info">
+            <div class="col-8">
+                <div id="calendar"></div>
             </div>
-            <div class="col-6">
-                
-                <p><a href="https://www.google.com/maps/place/Oxford+Academy/@33.8224281,-118.0425098,18z/data=!3m1!4b1!4m2!3m1!1s0x80dd2e98997e6095:0xf86122ccefa379ec" target="_blank">Oxford Academy, 5172 Orange Ave Cypress, CA | Room 306</a></p>
+            <div class="col-4 loc">
+                <h2 id="mtg">WEEKLY</h2>
+                <h2 id="sch">SCHEDULE</h2>
+                <div id="dept-days">
+                    <div id="dept">
+                        <p id="sci">science</p>
+                        <p id="tech">technology</p>
+                        <p id="egr">engineering</p>
+                        <p id="math">math</p>
+                        <p>*all departments</p>
+                    </div>
+                    <div id="times">
+                        <p id="sci">thursdays</p>
+                        <p id="tech">wednesdays</p>
+                        <p id="egr">wed + sat</p>
+                        <p id="math">tuesdays</p>
+                        <p id="nineTo12">9AM - 12PM</p>
+                    </div>
+                </div>
+
+
+                <h2 id="meet">MEET</h2><h2 id="us">US</h2><h2 id="here">HERE</h2>
             <a href="https://www.google.com/maps/place/Oxford+Academy/@33.8224281,-118.0425098,18z/data=!3m1!4b1!4m2!3m1!1s0x80dd2e98997e6095:0xf86122ccefa379ec" target="_blank"><img src="images/306map.jpg"></a>
+                <p id="addr"><a href="https://www.google.com/maps/place/Oxford+Academy/@33.8224281,-118.0425098,18z/data=!3m1!4b1!4m2!3m1!1s0x80dd2e98997e6095:0xf86122ccefa379ec" target="_blank">Oxford Academy, 5172 Orange Ave Cypress, CA | Room 306</a></p>
             </div>
         </div>
         
